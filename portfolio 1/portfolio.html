@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amit Kumar Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>Amit Kumar</h1>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="toggle-btn" onclick="toggleContacts()">Show Contacts</button>
+                    <div id="mycontacts" class="contacts-container">
+                        <section id="contact" class="section">
+                            <h2>Contact</h2>
+                            <p>If you'd like to get in touch, feel free to reach out through any of the following
+                                methods:</p>
+                            <ul>
+                                <li><strong>Email:</strong> <a href="mailto:28aku1504@gmail.com">28aku1504@gmail.com</a>
+                                </li>
+                                <li><strong>Phone:</strong> +91 7404026849</li>
+                                <li><strong>LinkedIn:</strong> <a
+                                        href="https://www.linkedin.com/in/amit-kumar-5039412b3"
+                                        target="_blank">linkedin.com/in/amitkumar</a></li>
+                                <li><strong>GitHub:</strong> <a href="https://github.com/kumarbrother"
+                                        target="_blank">github.com/amitkumar</a></li>
+                            </ul>
+                        </section>
+                    </div>
+
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="amitkumar.png" alt="Profile Picture" class="profile-img">
+            <p>I am a Full Stack Web Developer with a strong foundation in both front-end and back-end technologies,
+                specializing in Java for building robust server-side solutions. Alongside my development skills, I have
+                experience as a coding, AI, and robotics trainer, where I guide students and professionals in learning
+                programming concepts, artificial intelligence, and robotics. I create dynamic, user-friendly web
+                applications using HTML, CSS, JavaScript for the front-end, and Java with frameworks like Spring or
+                Hibernate for the back-end. My passion for problem-solving and teaching drives me to stay current with
+                industry trends, ensuring that my solutions are both innovative and maintainable.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Weather App</h3>
+                <p>A weather forecasting application built with HTML, CSS, and JavaScript features real-time weather
+                    data fetched from a reliable weather API. The app provides users with current weather
+                    conditions, including temperature, humidity, and wind speed, based on their selected location.
+                    It includes error handling to gracefully manage issues like invalid location input or network
+                    errors, ensuring a smooth user experience. This project highlights the use of JavaScript for
+                    asynchronous API requests, data processing, and dynamic content updates, as well as responsive
+                    design techniques for an engaging and functional interface across all devices.</p>
+                <a href="https://github.com/yourusername/weather-app" target="_blank">View on GitHub</a>
+                <video controls>
+                    <source src="weather-app-demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="project">
+                <h3>Amazon Clone</h3>
+                <p>An Amazon clone built using HTML and CSS is a static, front-end project that replicates the core
+                    design and layout of the Amazon website. It features a styled header with a search bar and cart
+                    icon, a product showcase grid for displaying items, and promotional banners for a realistic
+                    e-commerce feel. This project demonstrates proficiency in HTML for structuring content and CSS
+                    for creating responsive, visually appealing layouts, making it a great addition to showcase web
+                    development skills in a personal portfolio</p>
+                <a href="https://github.com/yourusername/amazon-clone" target="_blank">View on GitHub</a>
+                <video controls>
+                    <source src="amazon-clone-demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="project">
+                <h3>Login Page</h3>
+                <p>A login page created with HTML, CSS, and JavaScript features a user-friendly interface for secure
+                    authentication. The page includes input fields for a username and password, with client-side
+                    validation to ensure proper data entry. It connects to a backend database to store and verify
+                    user credentials, enhancing security and functionality. This project highlights the use of
+                    JavaScript for form validation and dynamic interactions, as well as the integration of front-end
+                    and back-end components to manage user authentication. It’s a practical demonstration of
+                    building secure and responsive login systems, suitable for showcasing full-stack development
+                    capabilities in a personal portfolio.</p>
+                <a href="https://github.com/yourusername/login-page" target="_blank">View on GitHub</a>
+                <video controls>
+                    <source src="login-page-demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <img src="htmlcss.png" alt="HTML & CSS" class="skill-icon">
+                <p>HTML & CSS</p>
+            </div>
+            <div class="skill">
+                <img src="js.png" alt="JavaScript" class="skill-icon">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill">
+                <img src="react.png" alt="React" class="skill-icon">
+                <p>React</p>
+            </div>
+            <div class="skill">
+                <img src="java.png" alt="Node.js" class="skill-icon">
+                <p>java</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Download my resume to explore my experience and qualifications:</p>
+        <a href="amit kumar 1 (1).pdf" download>Download Resume</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form" method="POST" action="submit_form.">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Amit Kumar</p>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
